@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocha Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.css">
+</head>
+<body>
+
+    <div id="mocha"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.8/chai.min.js"></script>
+
+    <script>
+        mocha.setup("bdd");
+        const assert = chai.assert;
+
+        function pow(x, n) {
+            return x ** n; // Күштілік дәрежеге көтеру функциясы
+        }
+
+        describe("Raises x to power n", function() {
+            it("5 in the power of 1 equals 5", function() {
+                assert.equal(pow(5, 1), 5);
+            });
+
+            it("5 in the power of 2 equals 25", function() {
+                assert.equal(pow(5, 2), 25);
+            });
+
+            it("5 in the power of 3 equals 125", function() {
+                assert.equal(pow(5, 3), 125);
+            });
+        });
+
+        mocha.run();
+    </script>
+</body>
+</html>
