@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Problems</title>
+    <style>
+        /*3.5 
+        Change the color of h1*/
+        h1 {
+            color: orange;
+        }
+
+        /* 3.15 
+        Set the first div's width to 100px (pixels)
+        Set the second div's height to 200px (pixels)
+        Set the third div's margin to 1em
+        Set the fourth div's font-size to 2em*/
+        .first {
+            width: 100px;
+            background-color: pink;
+        }
+        .second {
+            height: 200px; 
+            background-color:bisque;
+        }
+        .third {
+            margin: 1em;
+            background-color: yellow;
+        }
+        .fourth {
+            font-size: 2em;
+            background-color: aquamarine;
+        }
+
+
+        /*4.2
+        add some style on a cat image*/
+        .kitty-img {
+            border: 3px black dotted;
+            cursor:pointer;
+            box-shadow: 5px 10px 5px 1px rgba(0,0,0,0.75);
+        }
+
+        /*4.3
+        Style The Font*/
+        .text {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: 500;
+            text-decoration: underline;
+            color: green;
+        }
+
+        /*4.4
+        Edit the missing id and class selectors*/
+        #task4-4{   text-align: center; }
+        .item{  color: red; }
+        .pot{   border-radius: 5px; }
+        .description{   font-style: italic; }   
+    </style>
+</head>
+<body>
+    
+    <h1>Hello, world</h1>
+
+    <div class="first">first</div>
+    <div class="second">second</div>
+    <div class="third">third</div>
+    <div class="fourth">fourth</div>
+
+    <img class='kitty-img' src="http://udacity.github.io/fend/lessons/L3/problem-set/02-style-an-image/kitten.jpg"
+    alt="kitty!">
+
+    <h1 class="text">Some font to style</h1>
+
+    <div id="task4-4">
+        <h1 class="item">Chicken Clay Pot</h1>
+        <img src="img/clay-pot.jpg" alt="clay pot" class="picture">
+        <p class="description">Crispy rice baked in clay pot topped 
+            with chicken and vegetables</p>
+    </div>
+
+
+</body>
+</html>
