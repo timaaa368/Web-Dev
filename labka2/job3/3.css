@@ -89,3 +89,26 @@ nav {
     border-radius: 5px;
 }
 
+.box {
+    display: flex;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    gap: 50px; /* Расстояние между элементами */
+    text-align: center; /* Выравнивание текста по центру */
+    margin: 20px;
+    text-decoration: underline;
+  }
+
+  .box a {
+    display: flex;
+    flex-direction: column; /* Располагаем изображение сверху, текст снизу */
+    align-items: center; /* Центрируем */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #0066cc; /* Цвет ссылок */
+    font-weight: bold;
+  }
+
+  .box a img {
+    width: 50px; /* Размер иконок */
+    height: 50px;
+    margin-bottom: 8px; /* Отступ от картинки до текста */
+  }

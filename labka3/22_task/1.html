@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            
         }
         .todo-container {
             max-width: 400px;
@@ -23,8 +24,8 @@
         }
         li {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             padding: 8px;
             border-bottom: 1px solid #ddd;
         }
@@ -39,6 +40,7 @@
             padding: 5px 10px;
             cursor: pointer;
         }
+        
     </style>
 </head>
 <body>
@@ -55,16 +57,18 @@
             let taskInput = document.getElementById("taskInput");
             let taskText = taskInput.value.trim();
             if (taskText === "") return;
-
+            
             let li = document.createElement("li");
             li.innerHTML = `
                 <input type="checkbox" onclick="toggleDone(this)">
                 <span>${taskText}</span>
                 <button onclick="removeTask(this)">X</button>
             `;
-
+                
             document.getElementById("taskList").appendChild(li);
             taskInput.value = "";
+                
+            
         }
 
         function toggleDone(checkbox) {
@@ -75,6 +79,7 @@
         function removeTask(button) {
             button.parentElement.remove();
         }
+    
     </script>
 
 </body>
